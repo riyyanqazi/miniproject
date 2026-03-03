@@ -4,6 +4,8 @@ let ul = document.querySelector(".todo-list");
 let add = document.getElementById("add");
 
 add.addEventListener("click", () => {
+if(input.value !== '') {
+
   let li = document.createElement("li");
   let btn = document.createElement("button");
 
@@ -12,10 +14,14 @@ add.addEventListener("click", () => {
 
   li.append(btn);
   ul.append(li);
-
+  
   btn.addEventListener("click", () => {
     li.remove();
   });
 
   input.value = "";
+}
+else{
+  alert('Try somthing any input field')
+}
 });
