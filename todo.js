@@ -22,6 +22,6 @@ if(input.value !== '') {
   input.value = "";
 }
 else{
-  alert('add somthing any input field')
+  alert('add somthing in input field')
 }
 });
